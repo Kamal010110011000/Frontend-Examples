@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="default.css">
+    <link id="theme-style" rel="stylesheet" href="default.css">
     <title>Kamal Singh</title>
 </head>
 <body>
@@ -32,10 +33,10 @@
                     <img src="images/kk.JPG" alt="" id="profile_pic">
                     <h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
                     <p id="setting-note">These setting will be saved for <br>your next visit</p>
                 </div>
@@ -60,21 +61,121 @@
 
     <section class="s2">
         <div class="main-container">
-            About
+            <div class="about-wrapper">
+                <div class="about-me">
+                    <h4>More about me</h4>
+                    <p>
+                        I have projects on Java Spdring framework,
+                        and Php Laravel projects.
+                    </p>
+                    <p>
+                        Random Text Random Text Random Text Random Text
+                        Random Text Random Text Random Text Random Text
+                        Random Text Random Text.
+                    </p>
+                    
+                    <hr>
+
+                    <h4>Top Experties</h4>
+                    <p> 
+                        FullStack developer with primary focus on Spring and Angular
+                        <a target="_blank" href="images/kk.JPG">Download Resume</a>
+                    </p>
+
+                    <div id="skills">
+                        <ul>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>C#</li>
+                            <li>Php</li>
+                            <li>mySQL</li>
+                        </ul>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>C#</li>
+                            <li>Php</li>
+                            <li>mySQL</li>
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <div class="social-links">
+                    <img id="social_img" src="images/kk.JPG" alt="">
+                    <h3>Find Me on Github</h3>
+                    <a target="_blank" href="#">GitHub: Kamal010110011000</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="s1">
         <div class="main-container">
-            Portfolio
+            <h3 style="text-align: center;">Some Of my Projects</h3>
+            <div class="post-wrapper">
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/kk.JPG" alt="">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">
+                                This is a para. some random text
+                            </p>
+                            <a href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/kk.JPG" alt="">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">
+                                This is a para. some random text
+                            </p>
+                            <a href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/kk.JPG" alt="">
+                        <div class="post-preview">
+                            <h6 class="post-title">Post Title</h6>
+                            <p class="post-intro">
+                                This is a para. some random text
+                            </p>
+                            <a href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="s2">
         <div class="main-container">
-            Contact
+            <h3 style="text-align: center;">Contact Me</h3>
+            <form action="" id="contact-form">
+                <label for="">Name</label>
+                <input type="text" name="name" class="input-field">
+
+                <label for="">Subject</label>
+                <input type="text" name="subject" class="input-field">
+
+                <label for="">Email</label>
+                <input type="text" name="email" class="input-field">
+
+                <label for="">Message</label>
+                <textarea class="input-field" name="message"></textarea>
+
+                <input id="submit-btn" type="submit" value="send">
+            </form>
         </div>
     </section>
+
+    <script type="text/javascript" src="script.js"></script>
     
 </body>
 </html>
